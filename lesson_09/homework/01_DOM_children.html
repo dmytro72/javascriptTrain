@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM children</title>
+</head>
+<body>
+<!-- How to access:
+ The <div> DOM node?
+ The <ul> DOM node?
+ The second <li> (with Pete)-->
+<div>Users:</div>
+<ul>
+  <li>John</li>
+  <li>Pete</li>
+</ul>
+<script>
+  console.dir(document.body.firstElementChild);
+  console.dir(document.body.firstElementChild.nextElementSibling);
+  console.dir(document.body.firstElementChild.nextElementSibling.lastElementChild);
+</script>
+</body>
+</html>

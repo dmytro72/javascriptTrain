@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The sibling question</title>
+</head>
+<body>
+<!-- If elem - is an arbitrary DOM element node...
+ Is it true that elem.lastChild.nextSibling is always null?
+ Is it true that elem.children[0].previousSibling is always null?-->
+<div>Users:</div>
+<ul>
+  <li>John</li>
+  <li>Pete</li>
+</ul>
+<script>
+  console.log(document.body.lastChild.nextSibling === null);
+  console.log(document.body.children[0].previousSibling === null);
+</script>
+</body>
+</html>
