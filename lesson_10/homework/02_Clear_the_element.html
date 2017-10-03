@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clear the element</title>
+</head>
+<body>
+<!-- Create a function clear(elem) that removes
+ everything from the element -->
+
+<ol id="elem">
+  <li>Hello</li>
+  <li>World</li>
+</ol>
+<script>
+  let clear = function (elem) {
+    elem.innerHTML = '';
+  };
+  clear(document.getElementById('elem'));
+</script>
+</body>
+</html>

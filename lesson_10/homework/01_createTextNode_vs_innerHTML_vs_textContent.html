@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>createTextNode vs innerHTML vs textContent</title>
+</head>
+<body>
+<!-- We have an empty DOM element "elem" and a string "text"
+ Which of these 3 commands do exactly the same?
+ 1. elem.append(document.createTextNode(text))
+ 2. elem.innerHTML = text
+ 3. elem.textContent = text
+ -->
+<div></div>
+<div></div>
+<div></div>
+
+<script>
+  let elementA = document.body.firstElementChild;
+  let elementB = elementA.nextElementSibling;
+  let elementC = elementB.nextElementSibling;
+  let text = '<b>text</b>';
+  elementA.append(document.createTextNode(text));
+  elementB.innerHTML = text;
+  elementC.textContent = text;
+</script>
+
+</body>
+</html>
